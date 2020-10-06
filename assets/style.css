@@ -1,0 +1,345 @@
+body{
+	background-color:#f9f9f9;
+	font-size:12px;
+	color:#444;
+	font-family: sans-serif;
+	margin: 0px;
+}
+ 
+.content{
+	width: 100%;
+	margin: 10px auto;
+}
+
+.content_print{
+	width: 80%;
+}
+ 
+
+/*header*/
+header{
+	background-color: white;
+	padding: 20px 10px;
+	border-radius: 5px;
+	border: 1px solid #f0f0f0;
+	margin-bottom: 10px;
+}
+ 
+header h1.judul,
+header h3.deskripsi{
+	text-align: center;	
+}
+ 
+div.badan{
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #f0f0f0;
+	margin-bottom: 10px;
+}
+ 
+div.halaman{
+	text-align: center;
+	padding: 30px 20px;	
+}
+		 
+.judul{
+	background: #87D1D8;
+	padding: 10px;
+	text-align: center;
+	color:white;
+}
+
+
+.page{
+	text-align: center;
+}
+
+@media print{@page {size: landscape}}
+	 
+.judul h1,h2,h3{
+	height: 15px;
+}
+		 
+a{
+	/*color: #fff;*/
+	padding: 5px;
+	text-decoration: none;	
+}
+/* table design */
+/* Table */
+.demo-table {
+    font-family: sans-serif;
+	font-size: 12px;
+    color: #444;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #f2f5f7;
+}
+ 
+.demo-table tr th{
+    background: #35A9DB;
+    color: #fff;
+    font-weight: normal;
+}
+ 
+.demo-table, th, td {
+    padding: 8px 20px;
+    text-align: center;
+}
+ 
+.demo-table tr:hover {
+    background-color: #f5f5f5;
+}
+ 
+.demo-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}		
+/* End of table Design */
+/* Table Reporting*/
+.demo-table-report {
+    font-family: sans-serif;
+	font-size: 12px;
+    color: #444;
+    border-collapse: collapse;
+    border: 1px solid #f2f5f7;
+}
+ 
+.demo-table-report tr th{
+    background: #35A9DB;
+    color: #fff;
+    font-weight: normal;
+}
+ 
+.demo-table-report, th, td {
+    padding: 8px 20px;
+    text-align: center;
+}
+ 
+.demo-table-report tr:hover {
+    background-color: #f5f5f5;
+}
+ 
+.demo-table-report tr:nth-child(even) {
+    background-color: #f2f2f2;
+}		
+/* End of table Design */
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+}
+/* Style the label to display next to the inputs */
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+	margin-top: 5px;
+}
+
+/* Style the container */
+.container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+
+.col-30 {
+	float: right;
+	width: 25%;
+	margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+	float: left;
+	width: 75%;
+}
+
+.col-75-80 {
+	float: left;
+	width: 75%;
+}
+ .tandaTangan{
+	 float: right;
+	 margin-top: 6px;
+	 width: 75%;
+ }
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+	width: 100%;
+	margin-top: 0;
+	}
+}
+
+/* Button */
+.add_field_button {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 12px;
+  color: #FFFFFF;
+  float: right;
+  padding: 5px;
+  margin-top: 5px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.add_field_button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.add_field_button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.add_other_button {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 12px;
+  color: #FFFFFF;
+  float: right;
+  padding: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.add_other_button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.add_other_button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+/* a href */
+.ahrefButton{
+display:inline-block;
+padding:0.2em 1em;
+border:0.16em solid #000000;
+margin:0 0.3em 0.3em 0;
+box-sizing: border-box;
+text-decoration:none;
+text-transform:uppercase;
+font-family:'Roboto',sans-serif;
+font-weight:100;
+color:#000000;
+text-align:center;
+transition: all 0.15s;
+}
+.ahrefButton:hover{
+color:#DDDDDD;
+border-color:#DDDDDD;
+}
+.ahrefButton:active{
+color:#BBBBBB;
+border-color:#BBBBBB;
+}
+@media all and (max-width:30em){
+.ahrefButton{
+display:block;
+margin:0.4em auto;
+}
+}
+
+/*a href remove field */
+.remove_field {
+  position: relative;
+  background-color: #fc0015;
+  border: none;
+  font-size: 12px;
+  color: #FFFFFF;
+  float: right;
+  padding: 5px;
+  margin-top: 5px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.remove_field:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.remove_field:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
